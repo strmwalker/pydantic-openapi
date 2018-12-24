@@ -37,7 +37,7 @@ def main():
         indent = args.indent
         prefix = args.prefix
         modules = args.modules
-        description = args.description
+        description = args.text
     generator = OpenAPIGenerator(title=title, indent=indent, ref_prefix=prefix,
                                  description=description)
 
