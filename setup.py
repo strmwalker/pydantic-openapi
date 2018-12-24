@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='pydantic_openapi',
-    version='0.1.0',
+    version='0.1.1',
     packages=['src'],
     url='https://github.com/yurathestorm/pydantic-openapi',
     license='GNU',
