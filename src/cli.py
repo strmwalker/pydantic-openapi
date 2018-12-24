@@ -2,7 +2,8 @@ import os
 
 from src.openapi_generator import OpenAPIGenerator
 
-if __name__ == '__main__':
+
+def main():
     import argparse
 
     parser = argparse.ArgumentParser(description='Turn files with pydantic models to OpenAPI JSON schema. '
@@ -51,3 +52,7 @@ if __name__ == '__main__':
             o.write(generator.render())
     else:
         print(generator.render())
+
+
+if __name__ == '__main__':
+    main()
