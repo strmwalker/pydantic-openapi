@@ -1,6 +1,6 @@
 import os
 
-from .openapi_generator import OpenAPIGenerator
+from src.openapi_generator import OpenAPIGenerator
 
 if __name__ == '__main__':
     import argparse
