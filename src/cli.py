@@ -1,5 +1,3 @@
-import os
-
 from src.openapi_generator import OpenAPIGenerator
 
 
@@ -19,7 +17,6 @@ def main():
     parser.add_argument('--output', type=str, help='output file')
 
     args = parser.parse_args()
-    os.chdir('..')
 
     if args.config:
         from configparser import ConfigParser
