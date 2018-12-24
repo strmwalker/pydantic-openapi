@@ -4,7 +4,7 @@ setup(
     name='pydantic_openapi',
     version='0.1.0',
     packages=['src'],
-    url='',
+    url='https://github.com/yurathestorm/pydantic-openapi',
     license='GNU',
     author='Yury Blagoveshchenskiy',
     author_email='yurathestorm@gmail.com',
