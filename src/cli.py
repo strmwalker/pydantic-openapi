@@ -30,7 +30,10 @@ if __name__ == '__main__':
         indent = int(generator_options.get('indent') or args.indent)
         prefix = generator_options.get('prefix').strip('"') or args.prefix
         description = generator_options.get('description') or args.description
-        modules = [k for k in config_parser.get('modules')] or args.modules
+        if 'modules' in config_parser.sections():
+            modules = [k for k in config_parser['modules']]
+        else:
+            modules = args.modules
     else:
         title = args.title
         indent = args.indent
