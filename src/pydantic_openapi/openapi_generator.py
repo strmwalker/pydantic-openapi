@@ -5,7 +5,7 @@ from typing import Optional
 from pydantic import BaseModel
 from pydantic.schema import schema
 
-from src.pydantic_openapi.camel_case import camelize
+from .camel_case import camelize
 
 
 class OpenAPIGenerator:

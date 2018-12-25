@@ -1,4 +1,4 @@
-from src.pydantic_openapi.openapi_generator import OpenAPIGenerator
+from .openapi_generator import OpenAPIGenerator
 
 
 def main():
