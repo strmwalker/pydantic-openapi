@@ -31,5 +31,5 @@ class Album(BaseModel):
 
 
 class UserArray(BaseModel):
-    user: User
-    some_weird_list: List[int]
+    user: Optional[User]
+    some_weird_list: Optional[List[int]]
