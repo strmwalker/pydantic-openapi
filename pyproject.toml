@@ -12,6 +12,9 @@ inflection = "*"
 
 [tool.poetry.dev-dependencies]
 
+[tool.poetry.scripts]
+openapigen = 'pydantic_openapi.command_line.main'
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
