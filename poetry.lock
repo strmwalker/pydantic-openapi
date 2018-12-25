@@ -1,0 +1,38 @@
+[[package]]
+category = "main"
+description = "A backport of the dataclasses module for Python 3.6"
+marker = "python_version < \"3.7\""
+name = "dataclasses"
+optional = false
+python-versions = "*"
+version = "0.6"
+
+[[package]]
+category = "main"
+description = "A port of Ruby on Rails inflector to Python"
+name = "inflection"
+optional = false
+python-versions = "*"
+version = "0.3.1"
+
+[[package]]
+category = "main"
+description = "Data validation and settings management using python 3.6 type hinting"
+name = "pydantic"
+optional = false
+python-versions = ">=3.6"
+version = "0.16.1"
+
+[package.dependencies]
+[package.dependencies.dataclasses]
+python = "<3.7"
+version = ">=0.6"
+
+[metadata]
+content-hash = "fa4a3c2542a5320a66bdcf5b00412316aec736c1038946272e505484cb85f4a3"
+python-versions = "^3.6"
+
+[metadata.hashes]
+dataclasses = ["454a69d788c7fda44efd71e259be79577822f5e3f53f029a22d08004e951dc9f", "6988bd2b895eef432d562370bb707d540f32f7360ab13da45340101bc2307d84"]
+inflection = ["18ea7fb7a7d152853386523def08736aa8c32636b047ade55f7578c4edeb16ca"]
+pydantic = ["51f879ca4b1d114c9f892737a0d65233251fb00fcd2b6da2be0d277b8ba7d28d", "c90c9e5ae2a6a3f59efdcb1505ddfb18be6dc5648b536bf33782269460954cc2"]
