@@ -5,6 +5,8 @@ from typing import Optional
 from pydantic import BaseModel
 from pydantic.schema import schema
 
+from src.camel_case import camelize
+
 
 class OpenAPIGenerator:
 
@@ -23,6 +25,7 @@ class OpenAPIGenerator:
         self.models = []
 
     @property
+    @camelize
     def schema(self) -> dict:
         return schema(
             self.models,
